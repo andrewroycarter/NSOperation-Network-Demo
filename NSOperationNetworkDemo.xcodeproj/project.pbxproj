@@ -16,6 +16,9 @@
 		2216E1E616DFD6DC0050244A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2216E1E516DFD6DC0050244A /* Default.png */; };
 		2216E1E816DFD6DC0050244A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2216E1E716DFD6DC0050244A /* Default@2x.png */; };
 		2216E1EA16DFD6DC0050244A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2216E1E916DFD6DC0050244A /* Default-568h@2x.png */; };
+		2216E1F516DFD7050050244A /* PSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E1F316DFD7050050244A /* PSRootViewController.m */; };
+		2216E1F616DFD7050050244A /* PSRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2216E1F416DFD7050050244A /* PSRootViewController.xib */; };
+		2216E1FA16DFD7590050244A /* PSHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E1F916DFD7590050244A /* PSHTTPOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		2216E1E516DFD6DC0050244A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2216E1E716DFD6DC0050244A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2216E1E916DFD6DC0050244A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2216E1F216DFD7050050244A /* PSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRootViewController.h; sourceTree = "<group>"; };
+		2216E1F316DFD7050050244A /* PSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRootViewController.m; sourceTree = "<group>"; };
+		2216E1F416DFD7050050244A /* PSRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSRootViewController.xib; sourceTree = "<group>"; };
+		2216E1F816DFD7590050244A /* PSHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHTTPOperation.h; sourceTree = "<group>"; };
+		2216E1F916DFD7590050244A /* PSHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHTTPOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,9 @@
 		2216E1D916DFD6DC0050244A /* NSOperationNetworkDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2216E1E216DFD6DC0050244A /* PSAppDelegate.h */,
-				2216E1E316DFD6DC0050244A /* PSAppDelegate.m */,
+				2216E1F716DFD7430050244A /* PSHTTPOperation */,
+				2216E1F116DFD6EC0050244A /* PSRootViewController */,
+				2216E1F016DFD6E10050244A /* PSAppDelegate */,
 				2216E1DA16DFD6DC0050244A /* Supporting Files */,
 			);
 			path = NSOperationNetworkDemo;
@@ -97,6 +106,34 @@
 				2216E1E916DFD6DC0050244A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2216E1F016DFD6E10050244A /* PSAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2216E1E216DFD6DC0050244A /* PSAppDelegate.h */,
+				2216E1E316DFD6DC0050244A /* PSAppDelegate.m */,
+			);
+			name = PSAppDelegate;
+			sourceTree = "<group>";
+		};
+		2216E1F116DFD6EC0050244A /* PSRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2216E1F216DFD7050050244A /* PSRootViewController.h */,
+				2216E1F316DFD7050050244A /* PSRootViewController.m */,
+				2216E1F416DFD7050050244A /* PSRootViewController.xib */,
+			);
+			name = PSRootViewController;
+			sourceTree = "<group>";
+		};
+		2216E1F716DFD7430050244A /* PSHTTPOperation */ = {
+			isa = PBXGroup;
+			children = (
+				2216E1F816DFD7590050244A /* PSHTTPOperation.h */,
+				2216E1F916DFD7590050244A /* PSHTTPOperation.m */,
+			);
+			name = PSHTTPOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +192,7 @@
 				2216E1E616DFD6DC0050244A /* Default.png in Resources */,
 				2216E1E816DFD6DC0050244A /* Default@2x.png in Resources */,
 				2216E1EA16DFD6DC0050244A /* Default-568h@2x.png in Resources */,
+				2216E1F616DFD7050050244A /* PSRootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +205,8 @@
 			files = (
 				2216E1E016DFD6DC0050244A /* main.m in Sources */,
 				2216E1E416DFD6DC0050244A /* PSAppDelegate.m in Sources */,
+				2216E1F516DFD7050050244A /* PSRootViewController.m in Sources */,
+				2216E1FA16DFD7590050244A /* PSHTTPOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
