@@ -1,4 +1,4 @@
-NSOperationNetworkDemo
+NSOperation Network Demo
 ======================
 
 A small demo on how to use an NSOperation subclass to make async network calls.
